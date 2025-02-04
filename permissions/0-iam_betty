@@ -1,2 +1,2 @@
-#!/bin/bash
-echo su betty  > README.md
+#!/bin/bas
+su betty  > README.md
