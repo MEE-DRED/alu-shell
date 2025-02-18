@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
-#  Script bash displays the content for current directory
-for file in *-*; do
-  if [ -f "$file" ]; then
-    name_after_dash="${file#*-}"
-    echo "$name_after_dash"
-  fi
-done
+# this script displays:
+# The content of the current directory
+# In a list format
+# Where only the part of the name after the first dash is displayed (refer to the example)
+
+for i in *; do
+	    echo "$i" | cut -d'-' -f2
+    done
